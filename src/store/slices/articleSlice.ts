@@ -26,7 +26,7 @@ const initialState: initialStateProps = {
 export const getArticles = createAsyncThunk(
   'article/getArticles',
   async () => {
-    const res = await axios.get(`${process.env.NEXT_PUBLIC_API_URL}/article`)
+    const res = await axios.get(`${process.env.NEXT_PUBLIC_API_URL}/api/article`)
     return res.data.data
   }
 )
@@ -34,7 +34,7 @@ export const getArticles = createAsyncThunk(
 export const getArticleById = createAsyncThunk(
   'article/getArticleById',
   async (id: string) => {
-    const res = await axios.get(`${process.env.NEXT_PUBLIC_API_URL}/article/${id}`)
+    const res = await axios.get(`${process.env.NEXT_PUBLIC_API_URL}/api/article/${id}`)
     return res.data.data
   }
 )
