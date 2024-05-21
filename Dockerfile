@@ -13,6 +13,10 @@ RUN npm install
 # Копируем исходный код
 COPY . .
 
+# Устанавливаем переменные окружения
+ARG NEXT_PUBLIC_API_URL
+ENV NEXT_PUBLIC_API_URL=${NEXT_PUBLIC_API_URL}
+
 # Создаем сборку приложения
 RUN npm run build
 
