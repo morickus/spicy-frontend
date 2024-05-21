@@ -1,0 +1,27 @@
+.root {
+  width: 100%;
+  max-width: 680px;
+}
+
+.title {
+  margin-bottom: 15px;
+}
+
+.content {
+  padding-top: 15px;
+  position: relative;
+}
+
+.section {
+  gap: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.text {
+  p {
+    line-height: 28px;
+    white-space: pre-wrap;
+    color: var(--grey-color);
+  }
+}
